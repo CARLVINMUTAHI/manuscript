@@ -184,10 +184,10 @@ a {
   left:-20px
   float: left;
 text-align: left;
-border-style: dashed;
+border-style: none;
 height: 700px;
 width:250px;
-background-color:white;
+background-color:	#c5e8ec;
 border-right: solid;
 
 }
@@ -198,7 +198,7 @@ border-right: solid;
 
 }
 .Sidebar li{
-  border-style: solid;
+  border-style: none;
   text-align: left;
   text-decoration: none;
 }
@@ -210,10 +210,10 @@ width: 200px;
 
 }
 .Sidebar a:hover{
-  background-color: rgb(50,50,200);
+  background-color: #3eb4c1;
 }
 .active{
-  background-color: rgb(50,50,200);
+  background-color: #3eb4c1;
 }
 #last{
   position: absolute;
@@ -239,3 +239,30 @@ width: 200px;
   top: 50px;
   color: black;
 }
+.manusub{
+  position: absolute;
+  left: 350px;
+  top: 50px;
+  color: black;
+}
+
+.upload{
+position: absolute;
+top:400px;
+left: 0px;
+color: black;
+
+
+}
+.t{
+height: 30px;
+border-radius: 5px;
+border-color: black;
+}
+.s{
+	margin-top: 10px;
+	height: 30px;
+	background-color:  lightblue;
+width: 400px;
+border-color: black;
+border-radius: 10px;
