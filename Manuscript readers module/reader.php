@@ -88,35 +88,32 @@ background-color:#E93E00;
 
 </style>
 </head>
-<body>
+<body>  
 <div class="left">
 <div class="nav">
 <p style="color:white;">MANUSCRIPT RANKING</p>
-<input type="text" placeholder="Search Books and Authors">
+<form action="<?php echo base_url()?>/index.php/Book/SearchResults" method="POST">
+<input type="text" onkeypress="<?php echo base_url()?>/index.php/Book/SearchResults" name="search" placeholder="Search Books and Authors">
+</form>
 </div>
 <div class="category">
 <br>
+<form action="<?php echo base_url()?>/index.php/Book/Category" method="POST">
 <p style="color:white;">Categories</p>
 
-<input type="checkbox" name="category" value="All">All<br>
-<input type="checkbox" name="category" value="Science fiction">Science fiction<br>
-<input type="checkbox" name="category" value="Romance">Romance<br>
-<input type="checkbox" name="category" value="Drama">Drama<br>
-<input type="checkbox" name="category" value="Mystery">Mystery<br>
-<input type="checkbox" name="category" value="Horror">Horror<br>
-<input type="checkbox" name="category" value="Comedy">Comedy<br>
-<input type="checkbox" name="category" value="Biographies">Biographies<br>
-<input type="checkbox" name="category" value="Autobiographies">Autobiographies<br>
-<input type="checkbox" name="category" value="Journals">Journals<br>
+<input type="radio" onclick="submit()" name="category" value="All">All<br>
+<input type="radio" onclick="submit()" name="category" value="Science_Fiction">Science fiction<br>
+<input type="radio" onclick="submit()" name="category" value="Romance">Romance<br>
+<input type="radio" onclick="submit()" name="category" value="Drama">Drama<br>
+<input type="radio" onclick="submit()" name="category" value="Mystery">Mystery<br>
+<input type="radio" onclick="submit()" name="category" value="Thriller">Thriller<br>
+<input type="radio" onclick="submit()" name="category" value="Horror">Horror<br>
+<input type="radio" onclick="submit()" name="category" value="Comedy">Comedy<br>
+<input type="radio" onclick="submit()" name="category" value="Biography">Biographies<br>
+<input type="radio" onclick="submit()" name="category" value="Autobiography">Autobiographies<br>
+<input type="radio" onclick="submit()" name="category" value="Journal">Journals<br>
 <br>
-<p style="color:white;">Year Posted</p>
-<input type="checkbox" name="category" value="All">All<br>
-<input type="checkbox" name="category" value="2018">2018<br>
-<input type="checkbox" name="category" value="2017">2017<br>
-<input type="checkbox" name="category" value="2017">2016<br>
-<input type="checkbox" name="category" value="2015">2015<br>
-<input type="checkbox" name="category" value="2014">2014<br>
-<input type="checkbox" name="category" value="2013">2013<br>
+</form>
 </div>
 </div>
 <div class="right">
@@ -128,36 +125,15 @@ background-color:#E93E00;
 <br>
 <br>
 <div>
-<img src="Images/book1.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px;">
-<img src="Images/book2.jpg" alt="book" style="width:150px; height:210px;  padding-left:10px;padding-top:10px">
-<img src="Images/book3.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book4.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book5.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book6.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book7.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book8.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book9.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book10.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book11.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book12.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book13.png" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book1.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px;">
-<img src="Images/book2.jpg" alt="book" style="width:150px; height:210px;  padding-left:10px;padding-top:10px">
-<img src="Images/book3.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book4.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book5.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book6.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book7.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book8.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book9.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book10.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book11.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book12.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book1.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px;">
-<img src="Images/book2.jpg" alt="book" style="width:150px; height:210px;  padding-left:10px;padding-top:10px">
-<img src="Images/book3.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book4.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
-<img src="Images/book5.jpg" alt="book" style="width:150px; height:210px; padding-left:10px;padding-top:10px">
+  <?php if(count($records)): ?>
+      <?php foreach($records as $record){ ?>
+
+<a href="<?php echo base_url()?>/index.php/Book/index?id=<?php echo $record->Book_ID; ?>"><img alt="book" style="width:150px;  height:210px; padding-left:10px;padding-top:10px" src="<?php echo base_url()?>/assets/Cover_Images/<?php echo $record->Image; ?>"></a>
+	  <?php } ?>
+      <?php else: ?>
+<tr><h1 style="color:orange; text-align:center; ">0 Results...</h1></tr>
+
+<?php endif; ?>
 
 </div>
 </div>
