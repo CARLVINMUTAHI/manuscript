@@ -3,24 +3,19 @@
 <?php include 'controllers/navigation/first-navigation.php' ?>
 <?php
 ?>
-<?php
-    include '_database/database.php';
 
-    $current_user = $_SESSION['user_username'];
-    $sql = "SELECT * FROM manuscripts WHERE WriterID == '$current_user'";
-    $result = mysqli_query($database,$sql) or die(mysqli_error($database));
+<div class="form-group">
+  <form id="contact-form" class="form" action="components/view.php" enctype="multipart/form-data" method="POST" role="form">
+    <label class="form-label" for="author">Author Name</label>
+    <input type="text" class="form-control input-lg" id="name" name="author" placeholder="Title" tabindex="1" required>
 
-echo "<table>
-<tr>
-<th>No.</th>
-<th>Manuscript Title</th>
-<th>Category</th>
-</tr>;
-$count=0;
-while($row = mysqli_fetch_array($result))
-{
+</div>
+<div class="text-center">
+    <button type="submit" name="upload" class="btn btn-start-order">Upload</button>
+</div>
 
-echo </table>
-}";
+
+
+echo "$result";
 
 ?>
